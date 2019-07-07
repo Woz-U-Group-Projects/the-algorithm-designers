@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
+import { FindComponent} from './components/find/find.component'
 
 //the routes array is applying the Routes type 
 //that was imported at the top. the array is a collection
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'feedback',
     component: FeedbackComponent
+  },
+  {
+    path: 'find',
+    component: FindComponent
   },
   {
     path: 'home',
