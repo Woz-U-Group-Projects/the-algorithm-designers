@@ -1,0 +1,63 @@
+#logo{
+    width: 125px;
+    height: 100px;
+    float: left;
+}
+
+.nav-item{
+padding-left: 50px;
+padding-right: 50px;
+float: left;
+
+overflow: hidden;
+
+border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+background-color: lightgray;
+color: black;
+font-size: 24;
+text-decoration: none;
+
+transition: background-color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item:focus{
+    background-color: darkgray;
+    color: white;
+}
+
+.nav-item > * {
+    position: relative;
+}
+
+.nav-item span {
+    display: block;
+    padding: 12px 12px;
+}
+
+.nav-item:before {
+    border-radius: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.nav-item:active:before {
+    width: 120%;
+    padding-top: 120%;
+
+    transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+
+.navbar{
+    height: 100px;
+}
