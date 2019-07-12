@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Front'; //change the title to view on page
-  //contains the path where the page will be served
-  staticPath: string = 'http://localhost:3001/staticPlanets';
-  livePath: string = 'http://localhost:3001/planets';
 }
 
