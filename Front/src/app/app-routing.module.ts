@@ -6,6 +6,12 @@ import { AboutComponent } from './components/about/about.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { FindComponent} from './components/find/find.component'
+import { SigninComponent } from './components/signin/signin.component';
+import { DenvercoComponent } from './components/denverco/denverco.component'
+import { LacaliComponent } from './components/lacali/lacali.component';
+import { HonoluluhawaiiComponent } from './components/honoluluhawaii/honoluluhawaii.component';
+import { NewyorkComponent } from './components/newyork/newyork.component';
+import { SbmiamiComponent } from './components/sbmiami/sbmiami.component';
 
 //the routes array is applying the Routes type 
 //that was imported at the top. the array is a collection
@@ -32,6 +38,30 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'signin',
+    component: SigninComponent
+  },
+  {
+    path: 'denverco',
+    component: DenvercoComponent
+  },
+  {
+    path: 'lacali',
+    component: LacaliComponent
+  },
+  {
+    path: 'honoluluhawaii',
+    component: HonoluluhawaiiComponent
+  },
+  {
+    path: 'newyork',
+    component: NewyorkComponent
+  },
+  {
+    path: 'sbmiami',
+    component: SbmiamiComponent
   }
 ];
 

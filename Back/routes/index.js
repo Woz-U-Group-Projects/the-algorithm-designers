@@ -1,12 +1,5 @@
 var express = require('express');
 var router = express.Router();
-//to be able to work with sqlite3
-const sqlite = require('sqlite3').verbose();
-//to be able to work with the models folder
-const models = require('../models');
-//add the require statement to be able to use sqlite
-const sqlite = require('sqlite3').verbose();
-
 
 // chane GET route to /staticPlanets to set the data
 //of the planets to what is in the static model
