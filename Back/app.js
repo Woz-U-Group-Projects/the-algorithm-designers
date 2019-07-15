@@ -5,6 +5,10 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //to import the models
 var models = require('./models');
+const cors = require('cors')
+const  sqlite3  =  require('sqlite3').verbose();
+const  jwt  =  require('jsonwebtoken');
+const  bcrypt  =  require('bcryptjs');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -15,7 +19,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-// lines 16-23 tells browsers that it's Ok to make requests
+// lines 21-25 tells browsers that it's Ok to make requests
 //to this server even though the initial page was not loaded from
 //the server, the front-end application will load the initial page
 app.use(function(req, res, next) {

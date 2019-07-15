@@ -1,0 +1,124 @@
+.wrapper--w1226 {
+    width: 544px;
+    height: 850px;
+}
+
+.card-5::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fe497f), to(#47a9ff));
+    background-image: -webkit-linear-gradient(bottom, #fef249 0%, #47a9ff 100%);
+    background-image: -moz-linear-gradient(bottom, #fe4994 0%, #47a9ff 100%);
+    background-image: -o-linear-gradient(bottom, #fee349 0%, #47a9ff 100%);
+    background-image: linear-gradient(to top, #e01616 0%, #b3ff00 100%);
+    opacity: 0.9;
+    height: 860px;
+}
+
+.card-5 {
+    height: 860px;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    margin-top: -420px;
+    padding: 105px;
+    overflow: scroll;
+    height: 570px;
+}
+
+.input-group {
+    width: 500px;
+}
+
+#myUL li a {
+    padding: 10px;
+    text-decoration: bold;
+    font-size: 30px;
+    color: rgb(0, 47, 255);
+    display: inline-block;
+}
+
+#myUL li a:hover:not(.header) {
+    color: rgb(8, 226, 255);
+}
+
+#yo {
+    float: right;
+    color: rgb(55, 11, 216);
+    margin-top: 10px;
+    font-weight: 90;
+    margin-left: 511px;
+    letter-spacing: 20px;
+}
+
+#yup {
+    margin-left: 590px;
+    margin-top: 80px;
+}
+
+.fling-minislide {
+    width: 975px;
+    height: 860px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 923px;
+    margin-top: -850px;
+}
+
+.fling-minislide img {
+    position: absolute;
+    animation: fling-minislide 20s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    height: 878px;
+}
+
+@keyframes fling-minislide {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+.fling-minislide img:nth-child(4) {
+    animation-delay: 0s;
+}
+
+.fling-minislide img:nth-child(3) {
+    animation-delay: 5s;
+}
+
+.fling-minislide img:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.fling-minislide img:nth-child(1) {
+    animation-delay: 15s;
+}
+
+h1 {
+    display: inline;
+    position: relative;
+    font: 100px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgb(255, 94, 0);
+    top: -470px;
+    left: -40px;
+}
+
+h1:after {
+    content: "Destinations";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: rgb(0, 60, 255);
+}

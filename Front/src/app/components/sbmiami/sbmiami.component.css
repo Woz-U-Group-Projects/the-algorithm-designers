@@ -1,0 +1,70 @@
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#sky {
+    width: 100%;
+    height: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(4, 82, 252);
+    font-size: 38px;
+}
+
+#fly {
+    color: rgb(100, 27, 148);
+    margin-left: 720px;
+}
+
+select {
+    margin-left: 720px;
+    height: 50px;
+    width: 230px;
+}
+
+#this {
+    margin-left: 720px;
+    color: red;
+}
+
+#flytime {
+    margin-left: 720px;
+    color: rgb(100, 27, 148);
+}
+
+section {
+    margin-top: 130px;
+    height: 180px;
+}
+
+input {
+    margin-left: 720px;
+}
+
+p {
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 81, 255);
+    text-align: center;
+}
+
+.finally {
+    width: 100%;
+}
+
+h6 {
+    color: rgb(255, 8, 8);
+    text-align: center;
+    font-weight: 200px;
+}
+h4 {
+    color: green;
+}

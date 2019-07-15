@@ -1,11 +1,12 @@
 h3 {
     letter-spacing: 10px;
     text-align: center;
+    color: blue;
 }
 
 form {
-    background-color: lightgrey;
-    color: black;
+    background-color: rgb(4, 0, 255);
+    color: rgb(255, 255, 255);
 }
 
 #myInput {
@@ -14,4 +15,12 @@ form {
 
 #email {
     width: 300px;
+}
+
+img {
+    width: 1900px;
+}
+
+.signupbtn {
+    margin-left: 260px;
 }

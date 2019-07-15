@@ -1,26 +1,19 @@
 var express = require('express');
 var router = express.Router();
-//to be able to work with sqlite3
-const sqlite = require('sqlite3').verbose();
-//include this to be able to work with the static models
-var staticModels = require('../staticModels/planets');
-//to be able to work with the models folder
-const models = require('../models');
-
 
 // chane GET route to /staticPlanets to set the data
 //of the planets to what is in the static model
-router.get('/staticPlanets', function(req, res, next) {
+/*router.get('/staticPlanets', function(req, res, next) {
   //instead of using res.render method the res.send method is needed.
   //This method will send out the data and allow it to be accessible
   //by a front-end application. The data that is send must be converted
   //to JSON using the JSON.stringify() method 
   res.send(JSON.stringify(staticModels.planet));
 });
-
+*/
 
 //to be able to grab the planets data from the database
-router.get('/planets', function (req, res, next) {
+/*router.get('/planets', function (req, res, next) {
   models.planets.findAll().then(planetsAsPlainObjects => {
     const mappedPlanets = planetsAsPlainObjects.map(
       sequelizeModelForPlanet => ({
@@ -32,6 +25,6 @@ router.get('/planets', function (req, res, next) {
     res.send(JSON.stringify(mappedPlanets));
   });
 });
-
+*/
 
 module.exports = router;

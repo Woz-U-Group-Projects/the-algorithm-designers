@@ -1,7 +1,7 @@
 {
   "development": {
     "dialect": "sqlite",
-    "storage": "./planets.sqlite"
+    "storage": "./TravelWay.sqlite"
   },
   "test": {
     "username": "root",

@@ -1,0 +1,413 @@
+@media screen and (max-width: 767px) {
+    .container>header {
+        text-align: center;
+    }
+    p.codrops-demos {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ededed;
+}
+
+.loader {
+    max-width: 15rem;
+    width: 100%;
+    height: auto;
+    stroke-linecap: round;
+}
+
+circle {
+    fill: none;
+    stroke-width: 3.5;
+    animation-name: preloader;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    transform-origin: 170px 170px;
+    will-change: transform;
+}
+
+:nth-of-type(1) {
+    stroke-dasharray: 550px;
+}
+
+:nth-of-type(2) {
+    stroke-dasharray: 500px;
+}
+
+:nth-of-type(3) {
+    stroke-dasharray: 450px;
+}
+
+:nth-of-type(4) {
+    stroke-dasharray: 300px;
+}
+
+@keyframes preloader {
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+:root {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+*, :before, :after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -ms-box-sizing: inherit;
+    -o-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+
+
+#page-wrap {
+    position: relative;
+    clear: both;
+    background: none;
+    text-decoration: none;
+    padding: 9rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+#inner-wrap {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 322px;
+    overflow: visible;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    left: 2rem;
+    display: block;
+    width: 9vmax;
+    height: 9vmax;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 70%;
+    margin: auto 0;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 83%;
+    height: 100%;
+    margin: auto;
+}
+
+img, svg {
+    display: block;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+.credits {
+    position: relative;
+    z-index: 9;
+    font-size: 130%;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.credits a {
+    display: inline-block;
+    color: #df1888;
+    font-family: Arial, sans-serif;
+    line-height: 1.5em;
+    text-decoration: none !important;
+    white-space: nowrap;
+    margin: 0 1.2em;
+    padding: 0.6em 0;
+    transition: 150ms;
+}
+
+.credits a:hover {
+    color: #2d71b9;
+    cursor: pointer;
+}
+
+.credits-logo {
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1.6em;
+    height: 1.6em;
+    margin: 0 0.5em 0 0;
+}
+
+
+@font-face {
+    font-family: "GalanoGrotesqueW00-Bold";
+    src: url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.eot");
+    src: local("☺︎"), local("Galano Grotesque W00 Bold"), local("GalanoGrotesqueW00-Bold"), url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.eot?#iefix") format("embedded-opentype"), url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.woff2") format("woff2"), url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.woff") format("woff"), url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.ttf") format("truetype"), url("https://static2.pickjb.com/assets/fonts/GalanoGrotesqueW00-Bold.svg#GalanoGrotesqueW00-Bold") format("svg");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+.waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 30%;
+    margin: auto 0;
+}
+
+img, svg {
+    pointer-events: none;
+}
+
+h1 {
+    color: rgb(4, 20, 255);
+    font-family: "GalanoGrotesqueW00-Bold", "MarkPro-Heavy", "Pangram-ExtraBold", "SFUIDisplay-Heavy", "ProximaNova-Extrabld", "AvenirNext-Bold", "Wavehaus-158ExtraBold", "Sailec-Bold", "Europa-Bold", "Roboto-Black", "Affogato-Bold", Arial, sans-serif;
+    font-size: 50px;
+    text-align: left;
+    margin-top: 140px;
+    transform: translateY(-53%);
+}
+
+.goal {
+    color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+}
+
+canvas {
+    position: absolute;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 100px #4162a9;
+    transform: translateZ(0);
+}
+@import url(https://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+/*
+ * By Jose Aguinaga
+ * http://jjperezaguinaga.com
+ */
+
+body {
+    background: -webkit-radial-gradient(center, ellipse, rgb(235, 235, 235) 0%, #f2efd9 100%);
+}
+
+@-webkit-keyframes rotate-right {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate-left {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes hover {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    50% {
+        -webkit-transform: translateY(5%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes pull {
+    0% {
+        -webkit-transform: scaleY(1);
+    }
+    40% {
+        -webkit-transform: scaleY(1.01);
+    }
+    60% {
+        -webkit-transform: scaleY(0.99);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+    100% {
+        -webkit-transform: scaleY(0.99);
+    }
+    80% {
+        -webkit-transform: scaleY(1.01);
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+    }
+}
+
+#airplane2, #airplane1 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 60s linear 0s infinite;
+}
+
+#countryObjects {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 240s linear 0s infinite;
+}
+
+#floatingGlobe {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-left 360s linear 0s infinite;
+}
+
+#globe {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: hover 0s linear 0s infinite;
+}
+
+#windmill {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 331px 201px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 2s linear 0s infinite;
+}
+
+#cloud1 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: hover 3s linear 1s infinite;
+}
+
+#cloud2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: hover 3s linear 2s infinite;
+}
+
+#cloud3 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: hover 3s linear 3s infinite;
+}
+
+#circle1 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle3 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+#circle4 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-left 24s linear 0s infinite;
+}
+
+#circle5 {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transform-origin: 200px 200px;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation: rotate-right 12s linear 0s infinite;
+}
+
+.goal {
+    color: blue;
+    font-size: 80px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: rgb(7, 72, 252);
+}
+
+p {
+    text-align: center;
+    color:red;
+    background-color: black;
+}
