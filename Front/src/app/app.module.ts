@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 //this needs import to be able to use them
 import { HttpClientModule } from '@angular/common/http';
+import { UserModule } from './modules/user/user.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
 //add the HttpClientModule to imports to use it
 @NgModule({
   declarations: [AppComponent, AboutComponent, FeedbackComponent, HomeComponent, FindComponent, SigninComponent, DenvercoComponent, LacaliComponent, HonoluluhawaiiComponent, NewyorkComponent, SbmiamiComponent],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule, UserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
