@@ -7,11 +7,11 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { FindComponent} from './components/find/find.component'
 import { SigninComponent } from './components/signin/signin.component';
-import { DenvercoComponent } from './components/denverco/denverco.component'
-import { LacaliComponent } from './components/lacali/lacali.component';
-import { HonoluluhawaiiComponent } from './components/honoluluhawaii/honoluluhawaii.component';
-import { NewyorkComponent } from './components/newyork/newyork.component';
-import { SbmiamiComponent } from './components/sbmiami/sbmiami.component';
+import { DenvercoComponent } from './modules/hotel-prices/denverco/denverco.component'
+import { LacaliComponent } from './modules/hotel-prices/lacali/lacali.component';
+import { HonoluluhawaiiComponent } from './modules/hotel-prices/honoluluhawaii/honoluluhawaii.component';
+import { NewyorkComponent } from './modules/hotel-prices/newyork/newyork.component';
+import { SbmiamiComponent } from './modules/hotel-prices/sbmiami/sbmiami.component';
 
 //the routes array is applying the Routes type 
 //that was imported at the top. the array is a collection
