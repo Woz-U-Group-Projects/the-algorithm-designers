@@ -1,4 +1,4 @@
-export class Movie {
+export class Hotel {
     id: number;
     hotelName: string;
     hotelPrice: number;

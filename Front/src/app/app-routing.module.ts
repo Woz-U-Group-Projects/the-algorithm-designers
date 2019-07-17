@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 //import the routes and routermodule so i can use them
 import { Routes, RouterModule } from '@angular/router';
-//impor the components to be rendered when routing
-import { AboutComponent } from './components/about/about.component';
-import { FeedbackComponent } from './components/feedback/feedback.component';
-import { HomeComponent } from './components/home/home.component';
-import { FindComponent} from './components/find/find.component'
-import { SigninComponent } from './components/signin/signin.component';
-import { DenvercoComponent } from './modules/hotel-prices/denverco/denverco.component'
-import { LacaliComponent } from './modules/hotel-prices/lacali/lacali.component';
-import { HonoluluhawaiiComponent } from './modules/hotel-prices/honoluluhawaii/honoluluhawaii.component';
-import { NewyorkComponent } from './modules/hotel-prices/newyork/newyork.component';
-import { SbmiamiComponent } from './modules/hotel-prices/sbmiami/sbmiami.component';
+
+//impor all components used
+import { AboutComponent } from './modules/user/components/about/about.component';
+import { FeedbackComponent } from './modules/user/components/feedback/feedback.component';
+import { HomeComponent } from './modules/user/components/home/home.component';
+import { FindComponent} from './modules/user/components/find/find.component'
+import { SigninComponent } from './modules/user/components/signin/signin.component';
+import { DenvercoComponent } from './modules/hotel-prices/components/denverco/denverco.component'
+import { LacaliComponent } from './modules/hotel-prices/components/lacali/lacali.component';
+import { HonoluluhawaiiComponent } from './modules/hotel-prices/components/honoluluhawaii/honoluluhawaii.component';
+import { NewyorkComponent } from './modules/hotel-prices/components/newyork/newyork.component';
+import { SbmiamiComponent } from './modules/hotel-prices/components/sbmiami/sbmiami.component';
 
 //the routes array is applying the Routes type 
 //that was imported at the top. the array is a collection
