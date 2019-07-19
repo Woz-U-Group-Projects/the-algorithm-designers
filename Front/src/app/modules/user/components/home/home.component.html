@@ -3,37 +3,32 @@
 <h3>A dream destination awaits. Discover yours.</h3>
 <img src="./../../../assets/images/mountain.jpg">
 
-<form #myform="ngForm" (ngSubmit)="register(myform)" class="form form-register" style="border:1px solid rgb(0, 4, 252)">
-    <div class="container">
-        <h1>Signing up and planning your trip is now fun!</h1>
-        <p>You are one step to closer to making your dream trip happen!</p>
-      
+<!--how the user is beign asked to create a new account-->
+<div>
+    <form (ngSubmit)="addUser()">
+        <div>
+            <label for="name">First Name: </label>
+            <input type="text" name="firstName" required [(ngModel)]="user.FirstName" placeholder="First">
+        </div>
+        <div>
+            <label for="name">Last Name: </label>
+            <input type="text" name="lastName" required [(ngModel)]="user.LastName" placeholder="Last">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="text" name="email" required [(ngModel)]="user.Email" placeholder="Email">
+        </div>
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" required [(ngModel)]="user.Username" placeholder="Username">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="text" name="password" required [(ngModel)]="user.Password" placeholder="Password">
+        </div>
         <br/>
-        <div class="form-field">
-            <label class="first" for="register-firsname"><span class="hidden">First Name: </span></label>
-            <input name="first" id="register-firstname" type="email" class="form-input" placeholder="First Name" ngModel required>
+        <div>
+            <button type="submit">Add User</button>
         </div>
-        <div class="form-field">
-            <label class="last" for="register-lastname"><span class="hidden">Last Name: </span></label>
-            <input name="last" id="register-lastname" type="email" class="form-input" placeholder="Last Name" ngModel required>
-        </div>
-        <div class="form-field">
-            <label class="email" for="register-email"><span class="hidden">Email: </span></label>
-            <input name="email" id="register-email" type="email" class="form-input" placeholder="Email" ngModel required>
-        </div>
-        <div class="form-field">
-            <label class="username" for="register-username"><span class="hidden">Username: </span></label>
-            <input name="username" id="register-username" type="email" class="form-input" placeholder="Username" ngModel required>
-        </div>
-        <div class="form-field">
-            <label class="password" for="register-password"><span class="hidden">Password: </span></label>
-            <input name="password" id="register-password" type="email" class="form-input" placeholder="Password" ngModel required>
-        </div>
-
-        <div class="form-field">
-           <input type="submit" value="Register">
-            <p>Signing up is an acknowledgement and acceptance of our Terms &
-            Privacy.</p>
-        </div>
-    </div>
-</form>
+    </form>
+</div>

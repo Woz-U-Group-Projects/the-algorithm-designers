@@ -6,9 +6,25 @@ const sqlite = require('sqlite3').verbose();
 var models = require('../models');
 const auth = require('../config/auth');
 
+
+//testing path
+router.get('/', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+//render the singup page
+router.get('/signup', function(req, res, next) {
+  res.render('signup');
+});
+
+//render the login page
+router.get('/login', function(req, res, next) {
+  res.render('login');
+});
+
 //use a findOne and a create separately, I could use a findOrCreate
 //but to make it readable ill separate it that way i can debug it separately too
-router.post('/register', function (req, res, next) {
+router.post('/signup', function (req, res, next) {
   //this calls the hashPassword method located in the auth.js file
   const hashedPassword = auth.hashPassword(req.body.password);
   //find a username based on the requested username
@@ -54,7 +70,7 @@ router.post('/register', function (req, res, next) {
 });
 
 
-
+//log the user in
 router.post('/login', function (req, res, next) {
   const hashedPassword = auth.hashPassword(req.body.password);
   //find user based on username and password
@@ -89,26 +105,26 @@ router.post('/login', function (req, res, next) {
 });
 
 //in their profile page show the user info 
-router.get('/profile/:id', auth.verifyUser, function (req, res, next) {
-  if (req.params.id !== String(req.user.UserId)) {
-    res.send('This is not your profile')
-  } else {
-    res.render('profile', {
-      FirstName: req.user.FirstName,
-      LastName: req.user.LastName,
-      Email: req.user.Email,
-      UserId: req.user.UserId,
-      Username: req.user.Username
-    });
-  }
-});
+ router.get('/profile/:id', auth.verifyUser, function (req, res, next) {
+   if (req.params.id !== String(req.user.UserId)) {
+     res.send('This is not your profile')
+   } else {
+     res.render('profile', {
+       FirstName: req.user.FirstName,
+       LastName: req.user.LastName,
+       Email: req.user.Email,
+       UserId: req.user.UserId,
+       Username: req.user.Username
+     });
+   }
+ });
 
 //set the route to log out
-router.get('/logout', function (req, res) {
-  //set the response of the cookie to null instead of token
-  res.cookie('jwt', null);
-  //redirect to the log in page
-  res.redirect('/users/login');
-});
+ router.get('/logout', function (req, res) {
+   //set the response of the cookie to null instead of token
+   res.cookie('jwt', null);
+   //redirect to the log in page
+   res.redirect('/users/login');
+ });
 
 module.exports = router;

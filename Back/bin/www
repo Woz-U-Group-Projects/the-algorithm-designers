@@ -15,7 +15,7 @@ var http = require('http');
  /*the code needs to be changed such that the server runs on port
  3002 the reason for this is because the React/Angular2 apps run
  on port 3000 and both projects can be served on the same port */
-var port = normalizePort(process.env.PORT || '3002');
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
