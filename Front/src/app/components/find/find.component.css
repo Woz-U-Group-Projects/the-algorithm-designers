@@ -1,0 +1,220 @@
+#navbarDropdownMenuLink {
+    color: rgb(1, 18, 255);
+}
+
+a {
+    font-size: 12px;
+}
+
+i {
+    color: red;
+    font-size: 40px;
+    margin-left: 27px;
+    margin-top: 55px;
+}
+
+#road {
+    margin-right: 13px;
+    color: black;
+}
+
+#destination {
+    margin-left: 5px;
+}
+
+.codrops-top {
+    height: 170px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    opacity: 5;
+    text-transform: uppercase;
+    z-index: 9999;
+    position: relative;
+    box-shadow: 1px 0px 2px rgb(255, 2, 2);
+    background: rgb(3, 3, 245)
+}
+
+.codrops-top a {
+    padding: 12px 12px;
+    letter-spacing: 1px;
+    color: rgb(255, 0, 0);
+    margin-left: 6px;
+    line-height: 56px;
+}
+
+.codrops-top a:hover {
+    color: rgba(1, 1, 255, 0.975);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .container>header {
+        text-align: center;
+    }
+    p.codrops-demos {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}
+
+#logo {
+    height: 170px;
+    margin-left: -16px;
+}
+
+/* ==========================================================================
+   #WRAPPER
+   ========================================================================== */
+
+.wrapper--w1226 {
+    width: 400px;
+}
+
+/*
+.input-group {
+    position: relative;
+}
+
+#myInput {
+    font-size: 18px;
+    padding: 16.5px 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+    margin-top: 130px;
+    margin-left: 130px;
+}
+
+.input--style-1::-webkit-input-placeholder {
+   
+    color: rgb(9, 64, 247);
+}
+*/
+
+.card-5 {
+    width: 923px;
+    height: 850px;
+}
+
+.card-5::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fe497f), to(#47a9ff));
+    background-image: -webkit-linear-gradient(bottom, #fef249 0%, #47a9ff 100%);
+    background-image: -moz-linear-gradient(bottom, #fe4994 0%, #47a9ff 100%);
+    background-image: -o-linear-gradient(bottom, #fee349 0%, #47a9ff 100%);
+    background-image: linear-gradient(to top, #e01616 0%, #b3ff00 100%);
+    opacity: 0.9;
+    height: 878px;
+}
+
+.card-5 .card-body {
+    padding: 59px 55px;
+    padding-bottom: 71px;
+}
+
+@media (max-width: 767px) {
+    .card-5 .card-body {
+        padding: 40px 30px;
+        padding-bottom: 55px;
+    }
+}
+
+#myInput {
+    background-color: rgb(250, 250, 250);
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    margin-top: -430px;
+    padding: 105px;
+    overflow: scroll;
+    height: 600px;
+}
+
+.input-group {
+    width: 400px;
+}
+
+#myUL li a {
+    padding: 10px;
+    text-decoration: bold;
+    font-size: 30px;
+    color: rgb(0, 47, 255);
+    display: inline-block;
+}
+
+#myUL li a:hover:not(.header) {
+    color: rgb(8, 226, 255);
+}
+
+#yo {
+    float: right;
+    color: rgb(55, 11, 216);
+    margin-top: 10px;
+    font-weight: 90;
+    margin-left: 511px;
+    letter-spacing: 20px;
+}
+
+#myInput {
+    margin-top: 80px;
+    margin-left: 90px;
+    border-color: black;
+}
+
+#yup {
+    margin-left: 510px;
+    margin-top: 70px;
+}
+
+.fling-minislide {
+    width: 975px;
+    height: 890px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 923px;
+    margin-top: -850px;
+}
+
+.fling-minislide img {
+    position: absolute;
+    animation: fling-minislide 20s infinite;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    height: 878px;
+}
+
+@keyframes fling-minislide {
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+
+.fling-minislide img:nth-child(4) {
+    animation-delay: 0s;
+}
+
+.fling-minislide img:nth-child(3) {
+    animation-delay: 5s;
+}
+
+.fling-minislide img:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.fling-minislide img:nth-child(1) {
+    animation-delay: 15s;
+}

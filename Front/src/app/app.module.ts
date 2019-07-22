@@ -11,9 +11,10 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { HomeComponent } from './components/home/home.component';
 import { FindComponent } from './components/find/find.component';
 
+
 //add the HttpClientModule to imports to use it
 @NgModule({
-  declarations: [AppComponent, PlanetsComponent, AboutComponent, FeedbackComponent, HomeComponent, FindComponent],
+  declarations: [AppComponent, PlanetsComponent, AboutComponent, FeedbackComponent, HomeComponent, FindComponent, ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]

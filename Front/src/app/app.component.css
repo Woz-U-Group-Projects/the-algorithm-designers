@@ -17,7 +17,7 @@ box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 
 background-color: lightgray;
 color: black;
-font-size: 24;
+font-size: 36;
 text-decoration: none;
 
 transition: background-color 0.3s;
@@ -60,3 +60,4 @@ transition: background-color 0.3s;
 .navbar{
     height: 100px;
 }
+  
